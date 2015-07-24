@@ -7,13 +7,13 @@ I used [this][matrix] for most of the all matrix manipulations, mainly because I
 ##Controls
 To move the original square around use the arrow keys. To modify [T] use `qwas` and the space bar. 
 
-*`q` is for 0,0
+`q` is for 0,0
 
-*`w` is for 0,1 
+`w` is for 0,1 
 
-*`a` is for 1,0
+`a` is for 1,0
 
-*`s` is for 1,1 
+`s` is for 1,1 
 
 Just pressing the keys will add one, holding down space first will subtract one. Lua tables start at 1, so they are implemented as n+1 in the code.
 
