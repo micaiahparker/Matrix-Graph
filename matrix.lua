@@ -203,34 +203,6 @@ function matrix.add( m1, m2 )
 	return setmetatable( mtx, matrix_meta )
 end
 
---// matrix.add ( m1, num )
--- Add add num to all entries in the matrix
-function matrix.addnum( m1, num )
-	local mtx = {}
-	for i = 1,#m1 do
-		local m3i = {}
-		mtx[i] = m3i
-		for j = 1,#m1[1] do
-			m3i[j] = m1[i][j] + num
-		end
-	end
-	return setmetatable( mtx, matrix_meta )
-end
-
---// matrix.add ( m1, m2 )
--- Add two matrices; m2 may be of bigger size than m1
-function matrix.addnum( m1, num )
-	local mtx = {}
-	for i = 1,#m1 do
-		local m3i = {}
-		mtx[i] = m3i
-		for j = 1,#m1[1] do
-			m3i[j] = m1[i][j] + num
-		end
-	end
-	return setmetatable( mtx, matrix_meta )
-end
-
 --// matrix.sub ( m1 ,m2 )
 -- Subtract two matrices; m2 may be of bigger size than m1
 function matrix.sub( m1, m2 )
